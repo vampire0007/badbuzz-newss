@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BadBuzz - Latest News</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #202124;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 6%;
+    }
+    header h1 { margin: 0; font-size: 34px; }
+    header p { margin-bottom: 0; color: #d1d5db; }
+    nav {
+      background: #dc2626;
+      padding: 13px 6%;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    nav a { color: white; text-decoration: none; }
+    main { max-width: 1050px; margin: 28px auto; padding: 0 16px; }
+    .breaking {
+      background: white;
+      padding: 18px;
+      border-left: 5px solid #dc2626;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    article {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #00000010;
+    }
+    article h3 { margin-top: 0; }
+    .tag { color: #dc2626; font-weight: bold; }
+    footer {
+      text-align: center;
+      background: #111827;
+      color: white;
+      padding: 22px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BadBuzz</h1>
+    <p>Your Daily Source of News</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#bangladesh">Bangladesh</a>
+    <a href="#world">World</a>
+    <a href="#business">Business</a>
+    <a href="#sports">Sports</a>
+  </nav>
+
+  <main>
+    <section class="breaking">
+      <strong>WELCOME TO BADBUZZ</strong>
+      <p>Your trusted destination for news and updates.</p>
+    </section>
+
+    <h2>Latest News</h2>
+
+    <section class="grid">
+      <article id="bangladesh">
+        <p class="tag">BANGLADESH</p>
+        <h3>Bangladesh News</h3>
+        <p>Your latest Bangladesh news will appear here.</p>
+      </article>
+
+      <article id="world">
+        <p class="tag">WORLD</p>
+        <h3>World News</h3>
+        <p>Discover important news from around the world.</p>
+      </article>
+
+      <article id="business">
+        <p class="tag">BUSINESS</p>
+        <h3>Business & Finance</h3>
+        <p>Updates on business, markets and the economy.</p>
+      </article>
+
+      <article id="sports">
+        <p class="tag">SPORTS</p>
+        <h3>Sports News</h3>
+        <p>Stay updated with your favourite sports.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 BadBuzz. All rights reserved.</p>
+  </footer>
+</body>
+</html>
